@@ -8,31 +8,42 @@
 
 <script lang='ts'>
   const { quote, loadQuote }: Props = $props()
+
+  $effect(() => {
+    // set font size based on quote length
+    const fontSize = Math.max(1.5, 2.5 - quote.length * 0.004)
+    document.documentElement.style.setProperty('--font-size', `${fontSize}rem`)
+  })
+
 </script>
 
 <div class='content'>
   <div class='quote-box'>
     <p class='quote'>{quote}</p>
   </div>
+  <button class='refresh-button' onclick={loadQuote}>
+    Random Quote
+  </button>
 </div>
 
-<button class='refresh-button' onclick={loadQuote}>
-  Random Quote
-</button>
+
 
 <style>
   /* Center content within remaining space */
   .content {
+    margin-top: 2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center; /* Center vertically */
     flex-grow: 1; /* Take remaining space */
+    gap: 2rem;
     width: 100%;
   }
 
   .quote-box {
     font-family: var(--font-quote);
-    font-size: 2rem;
+    font-size: var(--font-size, 2rem);
     width: 100%;
     line-height: 1.5;
     color: var(--text);

@@ -17,10 +17,6 @@ import Header from './header/Header.svelte';
 
 <style>
   .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     min-height: 100vh;
     padding: 2rem;
     max-width: 1280px;
@@ -28,4 +24,14 @@ import Header from './header/Header.svelte';
     text-align: center;
     color: var(--text);
   }
+
+  @media (min-width: 769px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
 </style>
