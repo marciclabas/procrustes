@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+:root {
+  --font-title: 'EB Garamond', serif;
+  --font-quote: 'Source Sans Pro', sans-serif;
+}
+
+:root {
+  --primary: #000000;  /* Black */
+  --accent: #D4AF37;   /* Gold */
+  --accent-dark: #B8860B;  /* Dark Goldenrod */
+  --text: #FFFFFF;     /* White */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary);
+  font-family: var(--font-body);
+}
