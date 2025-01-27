@@ -29,6 +29,7 @@
     width: 100%;
     border-bottom: 2px solid var(--accent);
     padding-bottom: 0.5rem;
+    view-transition-name: header;
   }
 
   .header-content {

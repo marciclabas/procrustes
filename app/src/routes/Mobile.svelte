@@ -26,8 +26,6 @@
   </button>
 </div>
 
-
-
 <style>
   /* Center content within remaining space */
   .content {
@@ -54,10 +52,6 @@
 
   /* Fixed button at the bottom */
   .refresh-button {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     background-color: var(--accent);
