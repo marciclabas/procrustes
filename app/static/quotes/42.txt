@@ -1,0 +1,1 @@
+If a pilot crashes a plane, n = 1 is not anecdote; if he doesn’t crash the plane, n = 100 is anecdote.

@@ -1,0 +1,1 @@
+Thinking that all individuals pursue “selfish” interests is equivalent to assuming that all random variables have zero covariance.
