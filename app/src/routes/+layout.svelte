@@ -18,9 +18,9 @@
   const { children } = $props()
 </script>
 
-<aside class="notice">
+<!-- <aside class="notice">
   Until approved by the author, only a few quotes are available.
-</aside>
+</aside> -->
 
 <div class='container'>
   <Header />
@@ -33,7 +33,7 @@
 </svelte:head>
 
 <style>
-  .notice {
+  /* .notice {
     background-color: var(--accent);
     color: var(--primary);
     padding: 1rem;
@@ -43,7 +43,7 @@
     position: relative;
     border-bottom: 2px solid var(--primary);
     view-transition-name: notice;
-  }
+  } */
   
   .container {
     min-height: 100vh;
