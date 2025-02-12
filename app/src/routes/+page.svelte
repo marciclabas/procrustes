@@ -1,27 +1,11 @@
-<script lang="ts" module>
-  const range = (end: number) => new Array(end).fill(0).map((_, i) => i)
-  function shuffle<T>(xs: T[]) {
-    for (let i = xs.length - 1; i >= 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [xs[i], xs[j]] = [xs[j], xs[i]];
-    }
-  }
-  const UNUSED = range(407)
-  shuffle(UNUSED)
-</script>
-
 <script lang='ts'>
   import Desktop from './Desktop.svelte'
   import Mobile from './Mobile.svelte'
 
-
-  let unused = $state(UNUSED)
-  // $inspect(unused)
+  const QUOTE_COUNT = 613
 
   async function randomQuote() {
-    if (unused.length === 0)
-      unused = UNUSED
-    const index = unused.pop()!
+    const index = Math.floor(Math.random() * QUOTE_COUNT)
     return await fetch(`/quotes/${index}.txt`).then(r => r.text())
   }
 

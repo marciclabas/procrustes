@@ -1,1 +1,1 @@
-Thinking that all individuals pursue “selfish” interests is equivalent to assuming that all random variables have zero covariance.
+Something finite but with unknown upper bounds is epistemically equivalent to something infinite. This is epistemic infinity.

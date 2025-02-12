@@ -1,0 +1,1 @@
+Remove all empty words from writings, résumés, conversation, except when they aim at courtesy.
