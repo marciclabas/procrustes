@@ -30,6 +30,7 @@
 
 <svelte:head>
   <title>The Bed of Procrustes</title>
+  <meta name="description" content="Aphorisms in random order from The Bed of Procrustes, by Nassim Taleb" />
 </svelte:head>
 
 <style>
