@@ -29,9 +29,47 @@
 <Footer />
 
 <svelte:head>
+  <!-- Basic Metadata -->
   <title>The Bed of Procrustes</title>
-  <meta name="description" content="Aphorisms in random order from The Bed of Procrustes, by Nassim Taleb" />
+  <meta name="description" content="Aphorisms in random order from The Bed of Procrustes, by Nassim Taleb." />
+  
+  <!-- Open Graph (OG) for social sharing -->
+  <meta property="og:title" content="The Bed of Procrustes" />
+  <meta property="og:description" content="Aphorisms in random order from The Bed of Procrustes, by Nassim Taleb." />
+  <meta property="og:url" content="https://bedofprocrustes.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://bedofprocrustes.com/favicon.webp" />
+
+  <!-- Twitter Card for social previews -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Bed of Procrustes" />
+  <meta name="twitter:description" content="Aphorisms in random order from The Bed of Procrustes, by Nassim Taleb." />
+  <meta name="twitter:image" content="https://bedofprocrustes.com/favicon.webp" />
+  <meta name="twitter:site" content="@your_twitter_handle" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://bedofprocrustes.com/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.webp" type="image/webp" />
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Website",
+      "name": "The Bed of Procrustes",
+      "url": "https://bedofprocrustes.com/",
+      "description": "Aphorisms in random order from The Bed of Procrustes, by Nassim Taleb.",
+      "image": "https://bedofprocrustes.com/favicon.webp",
+      "author": {
+        "@type": "Person",
+        "name": "Nassim Nicholas Taleb"
+      }
+    }
+  </script>
 </svelte:head>
+
 
 <style>
   /* .notice {
